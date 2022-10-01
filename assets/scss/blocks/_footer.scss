@@ -1,0 +1,99 @@
+.footer {
+    padding: 100px 0;
+    background-image: url(../img/footer-bg.jpg);
+}
+.footer__content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.footer__info {
+    flex-grow: 1;
+    background-color: rgba(17, 17, 17, 0.575);
+    border-radius: 4px;
+    text-align: center;
+    padding: 50px;
+}
+.footer__info-heading {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    color:  #ea651c;
+}
+.footer__info-desc {
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+.footer__form {
+    flex-grow: 1;
+    padding: 24px 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.footer__form-heading {
+    font-weight: 700;
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #ea651c;
+}
+.footer__label {
+    display: block;
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.footer__input {
+    display: block;
+    width: 100%;
+    padding: 4px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2px solid #ea651c;
+    margin-top: 5px;
+    resize: none;
+}
+.footer__terms-label {
+    text-align: left;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.footer__terms-link {
+    color:  #adcce9;
+}
+.footer_submit-btn {
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    border-style: none;
+    letter-spacing: 1px;
+    background-color: #ea651c;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 20px;
+    color: #fff;
+}
+@include breakpoint-down(550px) {
+    .footer__content-wrapper {
+        flex-direction: column;
+    }
+    .footer__form {
+        width: 100%;
+    }
+    .footer__info {
+        width: 100%;
+    }
+}

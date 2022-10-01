@@ -1,0 +1,42 @@
+.toggler {
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    cursor: pointer;
+}
+.toggler__line {
+    width: 24px;
+    height: 2px;
+    background-color: #111111;
+    display: block;
+}
+.toggler__line-top {
+    margin-bottom: 6px;
+}
+.toggler__line-center {
+    margin-bottom: 6px;
+}
+.toggler__line-bottom {
+}
+.header__nav {
+    .toggler {
+        display: block;
+        margin-left: auto;
+        margin-bottom: 20px;
+        .toggler__line {
+            background-color: #fff;
+        }
+        .toggler__line-top {
+            margin-bottom: 0px;
+            transform: rotate(-45deg);
+        }
+        .toggler__line-center {
+           display: none;
+        }
+        .toggler__line-bottom {
+            margin-top: -2px;
+            transform: rotate(45deg);
+        }
+
+    }
+}

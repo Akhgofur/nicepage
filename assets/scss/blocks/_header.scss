@@ -1,0 +1,39 @@
+.header {
+    position: relative;
+    padding: 20px 0;
+}
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__logo {
+}
+.header__logo-img {
+}
+.header__checkbox {
+    &:checked ~ .header__nav {
+        left: 0;
+        z-index: 1000;
+    }
+    &:checked ~ .header__black-wrapper {
+        display: block;
+        opacity: 0.5;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        background-color: #3a3a3a;
+        z-index: 100;
+    }
+}
+.header__toggler {
+}
+
+.header__nav {
+}
+
+.header__black-wrapper {
+    display: none;
+}
